@@ -1,0 +1,26 @@
+# other-math-code
+first attempt at math code without TDD
+
+#!/usr/bin/env node
+var x = process.argv[2];
+var y = parseInt(process.argv[3]);
+var z = parseInt(process.argv[4]);
+x = x.toLowerCase();
+switch (x)
+{
+	case "multiply":
+	console.log (y * z);
+	break; 
+	case "add":
+	console.log (y + z);
+	break;
+	case "subtract":
+	console.log(y - z);
+	break;
+	case "divide":
+	console.log(y / z);
+	break;
+	default:
+	console.log("There is an Error. You messed up somewhere.");
+	break;
+}	
